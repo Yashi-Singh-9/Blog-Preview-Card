@@ -12,6 +12,7 @@ body{
     text-align: center;
     justify-content: center;
     font-family: "Figtree", sans-serif;
+    overflow: hidden;
 }
 
 .card {
@@ -118,4 +119,61 @@ h2:active {
     font-size: 14px;
     font-weight: 800;
     color: #313131;
+}
+
+@media only screen and (max-width: 430px) {
+    .card {
+        width: 90%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+    }
+
+    .card .image img {
+        width: 100%; 
+    }
+
+    .preview-card {
+        margin-top: 20px; 
+        left: 5%;
+    }
+
+    .preview-card .category {
+        font-size: 12px;
+        padding: 4px 15px;
+        margin-left: 5px !important;
+    }
+
+    .preview-card .publish-date {
+        margin-left: 6px; 
+    }
+
+    h2 {
+        margin-left: 6px; 
+    }
+
+    .description {
+        margin-left: 3px;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .user-info {
+        flex-direction: row; /* Keep items in a row for wider screens */
+        align-items: center; /* Center align items vertically */
+        margin-top: 15px; /* Provide space from other elements */
+        overflow: hidden; /* Ensure content doesn't overflow */
+    }
+
+    .user-info img {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .user-info .user-name {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        font-weight: 800; /* Ensure text remains bold */
+        color: #313131; /* Maintain text color */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
 }
