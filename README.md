@@ -1,5 +1,9 @@
 # Blog Preview Card
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/61a76005-51d7-4733-884d-e31ace4e53a5/deploy-status)](https://app.netlify.com/sites/blog-preview-card-solution-01/deploys)
+![Last Commit](https://img.shields.io/gitlab/last-commit/Yashi-Singh-9/blog-preview-card)
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
+
 ## Description
 
 The **Blog Preview Card** is a visually appealing component designed to showcase a blog post preview. This project features an HTML and CSS-based card that highlights a blog post's category, publish date, title, description, and author information. The design is responsive, making it suitable for various screen sizes.
