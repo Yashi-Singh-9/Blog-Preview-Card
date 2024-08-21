@@ -1,57 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     background-color: hsl(47, 88%, 63%);
     text-align: center;
     justify-content: center;
     font-family: "Figtree", sans-serif;
     overflow: hidden;
+    height: 100vh; /* Ensure the body takes full height */
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 60px); /* Adjust height to account for header */
 }
 
 .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-55%, -55%);
     width: 360px;
     height: 500px;
     border: 1px solid #000;
     border-radius: 10px;
     box-shadow: 7px 7px rgba(0, 0, 0, 0.9);
     background-color: #fff;
+    position: relative;
 }
 
-.card:hover{
-    transform: translate(-50%, -50%) scale(1.05);
+.card:hover {
+    transform: scale(1.05);
     box-shadow: 15px 15px rgba(0, 0, 0, 0.6);
 }
 
 .card .image {
     width: 100%;
     height: auto;
-    position: relative;
-    top: 5%;
 }
 
 .card .image img {
     width: 90%;
     height: auto;
-    position: relative;
     border-radius: 10px;
 }
 
 .preview-card {
-    position: absolute;
-    margin-top: 35px;
+    padding: 20px;
     text-align: left;
-    left: 8%;
 }
 
 .preview-card .category {
@@ -59,12 +72,10 @@ body{
     margin-bottom: 4%;
     background-color: hsl(47, 88%, 63%);
     width: fit-content;
-    max-width: 100%;
     border-radius: 3px;
     padding: 5px 15px;
     font-weight: 800;
     font-size: 12px;
-    box-sizing: border-box;
 }
 
 .preview-card .publish-date {
@@ -78,28 +89,21 @@ body{
 h2 {
     font-weight: 800;
     font-size: 22px;
-    margin: 10px auto;
-    cursor: pointer; 
-    transition: color 0.3s ease; 
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-h2:hover {
-    color: hsl(47, 88%, 63%); 
-}
-
+h2:hover,
 h2:active {
-    color: hsl(47, 88%, 63%); 
+    color: hsl(47, 88%, 63%);
 }
-
 
 .description {
     color: hsl(0, 0%, 50%);
-    margin: 15px auto;
+    margin: 15px 0;
     font-size: 14px;
     font-weight: 500;
-    width: 98%; 
-    max-width: 100%; 
-    box-sizing: border-box; 
 }
 
 .user-info {
@@ -124,31 +128,28 @@ h2:active {
 @media only screen and (max-width: 430px) {
     .card {
         width: 90%;
-        transform: translate(-50%, -50%);
         padding: 15px;
     }
 
     .card .image img {
-        width: 100%; 
+        width: 100%;
     }
 
     .preview-card {
-        margin-top: 20px; 
-        left: 5%;
+        padding: 10px;
     }
 
     .preview-card .category {
         font-size: 12px;
         padding: 4px 15px;
-        margin-left: 5px !important;
     }
 
     .preview-card .publish-date {
-        margin-left: 6px; 
+        margin-left: 6px;
     }
 
     h2 {
-        margin-left: 6px; 
+        margin-left: 6px;
     }
 
     .description {
@@ -158,22 +159,18 @@ h2:active {
     }
 
     .user-info {
-        flex-direction: row; /* Keep items in a row for wider screens */
-        align-items: center; /* Center align items vertically */
-        margin-top: 15px; /* Provide space from other elements */
-        overflow: hidden; /* Ensure content doesn't overflow */
+        flex-direction: row;
+        align-items: center;
+        margin-top: 15px;
+        overflow: hidden;
     }
 
     .user-info img {
         margin-right: 10px;
-        margin-bottom: 0;
     }
 
     .user-info .user-name {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        font-weight: 800; /* Ensure text remains bold */
-        color: #313131; /* Maintain text color */
-        white-space: nowrap; /* Prevent text from wrapping */
+        font-size: 14px;
+        white-space: nowrap;
     }
-
 }
