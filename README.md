@@ -1,7 +1,7 @@
 # Blog Preview Card
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/61a76005-51d7-4733-884d-e31ace4e53a5/deploy-status)](https://app.netlify.com/sites/blog-preview-card-solution-01/deploys)
-![Last Commit](https://img.shields.io/gitlab/last-commit/Yashi-Singh-9/blog-preview-card)
+![Last Commit](https://img.shields.io/github/last-commit/Yashi-Singh-9/Blog-Preview-Card)
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## Description
@@ -26,8 +26,8 @@ This project was created as part of a Frontend Mentor challenge. You can view th
 To get started with this project, clone the repository and open the `index.html` file in your browser:
 
 ```bash
-git clone https://gitlab.com/Yashi-Singh-9/blog-preview-card.git
-cd blog-preview-card
+git clone https://github.com/Yashi-Singh-9/Blog-Preview-Card.git
+cd Blog-Preview-Card
 ```
 
 You can then open `index.html` in your preferred web browser to see the card in action.
