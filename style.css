@@ -26,6 +26,11 @@ body {
   box-shadow: 10px 10px hsl(0, 0%, 7%);
   border: 2px solid hsl(0, 0%, 7%);
 }
+@media (max-width: 520px) {
+  .blog-container {
+    width: 90%;
+  }
+}
 .blog-container img {
   width: 100%;
   height: auto;
